@@ -17,39 +17,39 @@ export class AppComponent {
 // edadUno, EdadDos
 // mostrar el promedio y la suma en dos cuadros de textos nuevos
 // botones "calcular" y "limpiar cuadros de textos"
-//   protected edadUno :any;
-//   protected edadDos :any;
-//   suma = 0; 
-//   protected promedio = 0;
+  protected edadUno :any;
+  protected edadDos :any;
+  suma = 0; 
+  protected promedio = 0;
 
   
-//   Calcular()
-//  {
-//    if(this.ValidarNumero(this.edadDos) && this.ValidarNumero(this.edadUno))
-//     {
-//       this.suma = parseFloat(this.edadUno.toString()) + parseFloat(this.edadDos.toString());
-//       this.promedio = this.suma / 2;
-//     }
-//     else{
-//       this.edadDos = "Dato incorrecto";
-//       this.edadUno = "Dato incorrecto";
-//     }
+  Calcular()
+ {
+   if(this.ValidarNumero(this.edadDos) && this.ValidarNumero(this.edadUno))
+    {
+      this.suma = parseFloat(this.edadUno.toString()) + parseFloat(this.edadDos.toString());
+      this.promedio = this.suma / 2;
+    }
+    else{
+      this.edadDos = "Dato incorrecto";
+      this.edadUno = "Dato incorrecto";
+    }
    
 
-//  }
+ }
 
-//  Limpiar()
-//  {
-//   this.edadDos = 0;
-//   this.edadUno = 0;
-//   this.suma = 0;
-//   this.promedio = 0;
-//  }
+ Limpiar()
+ {
+  this.edadDos = 0;
+  this.edadUno = 0;
+  this.suma = 0;
+  this.promedio = 0;
+ }
 
-//  ValidarNumero(valor: any): boolean 
-//  {
-//   return !isNaN(parseFloat(valor)) && isFinite(valor);
-//  } 
+ ValidarNumero(valor: any): boolean 
+ {
+  return !isNaN(parseFloat(valor)) && isFinite(valor);
+ } 
  
 
 }
